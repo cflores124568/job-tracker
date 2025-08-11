@@ -2,7 +2,7 @@ require('dotenv').config({path: '../.env'}); //Load from root
 const app = require('./app');
 const {connectDB, closeDB} = require('./config/db');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 if(!process.env.MONGO_URI){
     console.error('MONGO_URI is not defined in .env');
